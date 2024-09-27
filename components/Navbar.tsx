@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-black text-white p-4 shadow-lg">
+    <nav className="bg-white text-black p-4 shadow-lg"> {/* Navbar background white, text black */}
       <div className="container mx-auto flex justify-between items-center">
         
         {/* Logos Section */}
@@ -37,23 +37,23 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <Link href="/" className="text-white hover:text-gray-300">
+          <Link href="/" className="text-black hover:text-gray-700">
             Home
           </Link>
-          <Link href="/about" className="text-white hover:text-gray-300">
+          <Link href="/about" className="text-black hover:text-gray-700">
             About
           </Link>
-          <Link href="/services" className="text-white hover:text-gray-300">
+          <Link href="/services" className="text-black hover:text-gray-700">
             Services
           </Link>
-          <Link href="/contact" className="text-white hover:text-gray-300">
+          <Link href="/contact" className="text-black hover:text-gray-700">
             Contact
           </Link>
         </div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-white focus:outline-none">
+          <button onClick={toggleMenu} className="text-black focus:outline-none">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -74,17 +74,17 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-black text-white">
-          <Link href="/" className="block py-2 px-4 hover:bg-red-600">
+        <div className="md:hidden bg-white text-black">
+          <Link href="/" className="block py-2 px-4 hover:bg-gray-200">
             Home
           </Link>
-          <Link href="/about" className="block py-2 px-4 hover:bg-red-600">
+          <Link href="/about" className="block py-2 px-4 hover:bg-gray-200">
             About
           </Link>
-          <Link href="/services" className="block py-2 px-4 hover:bg-red-600">
+          <Link href="/services" className="block py-2 px-4 hover:bg-gray-200">
             Services
           </Link>
-          <Link href="/contact" className="block py-2 px-4 hover:bg-red-600">
+          <Link href="/contact" className="block py-2 px-4 hover:bg-gray-200">
             Contact
           </Link>
         </div>

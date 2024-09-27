@@ -3,12 +3,12 @@ import { CalendarDaysIcon, InformationCircleIcon, Cog6ToothIcon } from '@heroico
 
 export default function Welcome() {
   return (
-    <section className="py-16 bg-black">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-white mb-12">
+        <h2 className="text-4xl font-bold text-black mb-12">
           Welcome to VRC Roadworthy
         </h2>
-        <p className="text-gray-300 mb-6">
+        <p className="text-gray-600 mb-6">
    For more than 30 years, Vehicle Roadworthy Centre has been leading the way in the roadworthy industry in KwaZulu-Natal. Accredited by AA, Vehicle Roadworthy Centre has 2 branches situated in Durban, which offer quality and professional roadworthy testing and related services for all types of motor vehicles.
 </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

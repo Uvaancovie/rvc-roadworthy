@@ -1,11 +1,11 @@
 export default function Accreditations() {
     return (
-      <section className="py-16 bg-black">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-8">
+          <h2 className="text-3xl font-bold text-black mb-8">
             We Are Trusted
           </h2>
-          <p className="text-gray-300 mb-12">
+          <p className="text-gray-900 mb-12">
             RVC Roadworthy is proudly accredited by leading industry standards. We are approved by SABS, SASSETA, and RMI.
           </p>
           

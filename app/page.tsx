@@ -9,6 +9,7 @@ import Footer from '../components/Footer'
 import Contact from '../components/Contact'
 import AccreditationInfo from '@/components/AccreditationInfo'
 import FaqAccordion from '@/components/FaqAccordion'
+import '../app/globals.css' // Corrected path to import global styles
 export default function Home() {
   return (
     <div>

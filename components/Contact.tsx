@@ -2,17 +2,17 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <section className="py-16 bg-black text-white" id="contact">
+    <section className="py-16 bg-white text-black" id="contact">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Get In Touch</h2>
-        <p className="text-gray-300 text-center mb-12">
+        <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Get In Touch</h2>
+        <p className="text-gray-900 text-center mb-12">
           Have questions? Reach out to us and we’ll get back to you as soon as possible.
         </p>
 
         <div className="max-w-lg mx-auto">
           <form>
             <div className="mb-4">
-              <label htmlFor="name" className="block text-sm font-medium text-gray-300">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                 Full Name
               </label>
               <input
@@ -24,7 +24,7 @@ export default function Contact() {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="email" className="block text-sm font-medium text-gray-300">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                 Email Address
               </label>
               <input
@@ -36,7 +36,7 @@ export default function Contact() {
             </div>
 
             <div className="mb-6">
-              <label htmlFor="message" className="block text-sm font-medium text-gray-300">
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
                 Message
               </label>
               <textarea
@@ -59,7 +59,7 @@ export default function Contact() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-gray-300">
+          <p className="text-gray-700">
             Or reach us at: <br />
             Phone: <a href="tel:+1234567890" className="text-red-600">+123 456 7890</a> <br />
             Email: <a href="mailto:info@rvcrvroadworthy.com" className="text-red-600">info@rvcrvroadworthy.com</a>

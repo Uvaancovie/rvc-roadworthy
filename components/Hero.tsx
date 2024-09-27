@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center items-center text-center h-full text-white">
         {/* Heading with animation */}
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fadeInDown">
+        <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fadeInDown text-stone-50">
           Vehicle Testing Stations In Durban
         </h1>
 
