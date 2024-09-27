@@ -1,8 +1,8 @@
-'use client'
-
+'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image'; // Importing Next.js Image component
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,11 +14,26 @@ export default function Navbar() {
   return (
     <nav className="bg-black text-white p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">
-          <Link href="/" className="text-white">
-            RVC Roadworthy
-          </Link>
-        </h1>
+        
+        {/* Logos Section */}
+        <Link href="/">
+          <div className="flex items-center space-x-4"> {/* Flexbox to place logos next to each other */}
+            <Image 
+              src="/1.png"  // Path to the first logo in the public folder
+              alt="Logo 1"
+              width={50}  // Adjust width and height as necessary
+              height={50}
+              className="h-auto w-auto"
+            />
+            <Image 
+              src="/2.png"  // Path to the second logo in the public folder
+              alt="Logo 2"
+              width={50}
+              height={50}
+              className="h-auto w-auto"
+            />
+          </div>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">

@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; /* White background */
+  --foreground: #333333; /* Dark grey for text */
+  --heading-color: #000000; /* Black for main headings */
+  --subheading-color: #555555; /* Dark grey for subheadings */
+  --paragraph-color: #888888; /* Medium light grey for paragraphs */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,11 +26,25 @@ body {
   font-weight: 300;
 }
 
+/* Headings and Subheadings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color); /* Main headings in black */
+}
+
+h2, h3, h4 {
+  color: var(--subheading-color); /* Subheadings in dark grey */
+}
+
+p {
+  color: var(--paragraph-color); /* Paragraphs in medium light grey */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
 /* Animation Keyframes */
 @keyframes fadeInDown {
   0% {
@@ -73,6 +89,7 @@ body {
 .animate-bounceIn {
   animation: bounceIn 2s infinite;
 }
+
 /* Custom animation for the news banner */
 @keyframes scroll {
   0% {
