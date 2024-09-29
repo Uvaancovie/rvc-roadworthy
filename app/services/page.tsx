@@ -5,7 +5,7 @@ export default function ServicesPage() {
   return (
     <>
       <Navbar /> {/* This ensures the Navbar shows on the services page */}
-      <section className="py-16 bg-black text-white">
+      <section className="py-16 bg-white text-black">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-12">Our Services</h1>
           

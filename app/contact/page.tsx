@@ -5,7 +5,7 @@ export default function ContactPage() {
   return (
     <>
       <Navbar /> {/* Adds the Navbar to the contact page */}
-      <section className="py-16 bg-black text-white">
+      <section className="py-16 bg-white text-black">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-12">Get in Touch</h1>
 
@@ -17,7 +17,7 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold text-red-600 mb-4">Send us a message</h2>
               <form className="space-y-4">
                 <div>
-                  <label className="block text-sm font-bold mb-2">Name</label>
+                  <label className="block text-sm font-bold mb-2 text-white">Name</label>
                   <input
                     type="text"
                     className="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-600"
@@ -26,7 +26,7 @@ export default function ContactPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold mb-2">Email</label>
+                  <label className="block text-sm font-bold mb-2 text-white">Email</label>
                   <input
                     type="email"
                     className="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-600"
@@ -35,7 +35,7 @@ export default function ContactPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold mb-2">Message</label>
+                  <label className="block text-sm font-bold mb-2 text-white">Message</label>
                   <textarea
                     className="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-600"
                     rows={5}
