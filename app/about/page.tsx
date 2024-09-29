@@ -1,46 +1,74 @@
-'use client'; // Client-side rendering for interactivity
+'use client';
 
-import React from 'react';
-import Navbar from '../../components/Navbar'; // Adjust the path to your Navbar component
+import Image from 'next/image';
+import Navbar from '@/components/Navbar';
 
 export default function AboutPage() {
   return (
-    <>
-      <Navbar /> {/* Include the Navbar on the About page */}
-      <section className="py-16 bg-white text-black">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-12">Welcome to Vehicle Roadworthy Centre</h1>
+    <section className="py-16 bg-white text-gray-800">
+      <div className="container mx-auto px-4">
+        <h1 className="text-4xl font-bold text-black text-center mb-8">
+          About Vehicle Roadworthy Centre
+        </h1>
 
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-500 hover:scale-105">
-            <h2 className="text-2xl font-bold text-red-600 mb-4">
-              Leading the Roadworthy Industry in KwaZulu-Natal
-            </h2>
-            <p className="text-gray-300 mb-6">
-              For more than 30 years, Vehicle Roadworthy Centre has been leading the way in the roadworthy industry in
-              KwaZulu-Natal. Accredited by AA, Vehicle Roadworthy Centre has 2 branches situated in Durban, which offer
-              quality and professional roadworthy testing and related services for all types of motor vehicles.
+        {/* Flexbox layout for text and logos */}
+        <div className="flex flex-col md:flex-row items-start justify-between space-y-8 md:space-y-0 md:space-x-8">
+          
+          {/* Text Section with Border */}
+          <div className="md:w-2/3 border border-gray-300 rounded-lg p-6 shadow-md">
+            <p className="text-gray-700 mb-4">
+              Vehicle Roadworthy Centre is a privately owned vehicle testing business based in KwaZulu-Natal. Founded in 1992, it became well-known as a key player in the industry. Vehicle Roadworthy Centre has 2 branches which are situated with strategic positions in Durban and employ 20 members of staff.
             </p>
-            <p className="text-gray-300 mb-6">
-              We provide top-notch vehicle roadworthy inspections, ensuring that vehicles on the road meet the highest safety
-              standards. Our goal is to offer reliable and efficient testing services for every customer, giving them peace of
-              mind while on the road.
+            <p className="text-gray-700 mb-4">
+              Vehicle Roadworthy Centre is accredited by AA, RMI, SANS, and The Department of Transport. We operate as a proudly South African organization which has received numerous commendations for our services over the years.
             </p>
-            <p className="text-gray-300">
-              The Vehicle Roadworthy Centre looks forward to being of service to you! Whether you're a commercial fleet owner,
-              or an individual vehicle owner, we're here to assist with all your roadworthy needs.
+            <p className="text-gray-700 mb-4">
+              From the time of inception to the current date, we continue to provide professional roadworthy testing, and added-value services for the convenience of the public.
             </p>
           </div>
 
-          {/* Image or Visual Element */}
-          <div className="mt-12 flex justify-center">
-            <img
-              src="/public/images/roadworthy-about.jpg" // Ensure this path is correct
-              alt="Vehicle Roadworthy Centre"
-              className="rounded-lg shadow-lg w-full md:w-3/4 border-4 border-red-600"
-            />
+          {/* Logos Section with Border */}
+          <div className="flex flex-wrap justify-center md:w-1/3 space-x-4 space-y-4 border border-gray-300 rounded-lg p-6 shadow-md">
+            <div className="w-1/2 md:w-auto">
+              <Image
+                src="/rmi-logo.png"  // Path to your logo in the public folder
+                alt="RMI Logo"
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+            </div>
+            <div className="w-1/2 md:w-auto">
+              <Image
+                src="/SABS_logo.png"  // Path to your logo in the public folder
+                alt="SABS Logo"
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+            </div>
+            <div className="w-1/2 md:w-auto">
+              <Image
+                src="/SASSETA-LOGO.jpg"  // Path to your logo in the public folder
+                alt="SASSETA Logo"
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+            </div>
+            <div className="w-1/2 md:w-auto">
+              <Image
+                src="/2.png"  // Path to your logo in the public folder
+                alt="AA Logo"
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+            </div>
           </div>
+
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

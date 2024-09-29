@@ -13,7 +13,7 @@ import '../app/globals.css' // Corrected path to import global styles
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      
       <NewsBanner />
       <Hero />
       
@@ -22,7 +22,7 @@ export default function Home() {
       <FaqAccordion />
       <Contact />
       <AccreditationInfo />
-      <Footer />
+      
     </div>
   )
 }

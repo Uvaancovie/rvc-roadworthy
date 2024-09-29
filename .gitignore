@@ -1,5 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# git init
+# git add .
+#git commit -m "Updated background to white and adjusted text colors"
+#git push origin main
 
+ 
 # dependencies
 /node_modules
 /.pnp

@@ -12,6 +12,9 @@ export default function Footer() {
             <p className="text-gray-400">
               RVC Roadworthy provides trusted vehicle accreditation services approved by SABS, SASSETA, and RMI. We ensure that your vehicle meets all legal and safety standards.
             </p>
+            <p className="text-gray-400 mt-4">
+              KwaZulu Test Centre Address: Unit 29 Jacobs Industrial Park, 166 Bluff Road, Jacobs, 4052
+            </p>
           </div>
 
           {/* Column 2: Quick Links */}
