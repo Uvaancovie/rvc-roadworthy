@@ -3,13 +3,15 @@
 import React from 'react';
 import { FaCar, FaTools, FaClipboardCheck, FaKey, FaCogs, FaWrench, FaBatteryFull, FaShieldAlt } from 'react-icons/fa'; // Importing icons
 import { IconType } from 'react-icons'; // Importing IconType from 'react-icons'
-
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import ServiceCarousel from '@/components/ServiceCarousel';
 // Define the types for the service props
 interface ServiceCardProps {
   title: string;
   items: string[];
   Icon: IconType; // IconType from react-icons provides typing for icons
 }
+
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, items, Icon }) => (
   <div className="border border-gray-300 p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:border-red-500 group">
@@ -25,6 +27,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, items, Icon }) => (
         </li>
       ))}
     </ul>
+    
   </div>
 );
 
@@ -112,6 +115,7 @@ export default function ServicesPage() {
   return (
     <section className="py-16 bg-gradient-to-b from-white to-gray-100 text-gray-800">
       <div className="container mx-auto px-4">
+      <ServiceCarousel />
         <h1 className="text-4xl font-bold text-black text-center mb-12 animate-fade-in">
           Our Services
         </h1>
@@ -122,5 +126,9 @@ export default function ServicesPage() {
         </div>
       </div>
     </section>
+
+    
+
+    
   );
 }

@@ -103,3 +103,18 @@ p {
 .animate-scroll {
   animation: scroll 15s linear infinite;
 }
+
+/* styles/globals.css */
+body {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+}
+
+.card {
+    border: 2px solid red; /* Red card outline */
+}
+
+/* Add any other specific styles for red elements */
+.red-element {
+    color: red; /* Example for red elements */
+}

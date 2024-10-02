@@ -65,6 +65,26 @@ export default function AboutPage() {
                 className="mx-auto"
               />
             </div>
+
+            <div className="w-1/2 md:w-auto">
+              <Image
+                src="/proudly-southafrica.png"  // Path to your logo in the public folder
+                alt="AA Logo"
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+            </div>
+
+            <div className="w-1/2 md:w-auto">
+              <Image
+                src="/department-transport.png"  // Path to your logo in the public folder
+                alt="AA Logo"
+                width={100}
+                height={100}
+                className="mx-auto"
+              />
+            </div>
           </div>
 
         </div>

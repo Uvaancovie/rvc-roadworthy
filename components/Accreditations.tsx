@@ -6,13 +6,28 @@ export default function Accreditations() {
             We Are Trusted
           </h2>
           <p className="text-gray-900 mb-12">
-            RVC Roadworthy is proudly accredited by leading industry standards. We are approved by SABS, SASSETA, and RMI.
+            VRC Roadworthy is proudly accredited by leading industry standards. We are approved by SABS, SASSETA, and RMI.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* RMI Logo */}
             <div className="flex justify-center">
               <img src="/rmi-logo.png" alt="RMI Approved" className="w-32 h-auto" />
+            </div>
+
+            {/* Department of Transport */}
+            <div className="flex justify-center">
+              <img src="/proudly-southafrica.png" alt="RMI Approved" className="w-32 h-auto" />
+            </div>
+
+            {/* Department of Transport */}
+            <div className="flex justify-center">
+              <img src="/department-transport.png" alt="RMI Approved" className="w-32 h-auto" />
+            </div>
+
+             {/* AA */}
+             <div className="flex justify-center">
+              <img src="/2.png" alt="RMI Approved" className="w-32 h-auto" />
             </div>
   
             {/* SABS Logo */}

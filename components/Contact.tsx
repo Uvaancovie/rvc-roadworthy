@@ -61,8 +61,8 @@ export default function Contact() {
         <div className="mt-12 text-center">
           <p className="text-gray-700">
             Or reach us at: <br />
-            Phone: <a href="tel:+1234567890" className="text-red-600">+123 456 7890</a> <br />
-            Email: <a href="mailto:info@rvcrvroadworthy.com" className="text-red-600">info@rvcrvroadworthy.com</a>
+            Phone: <a href="tel:+1234567890" className="text-red-600">0314611069</a> <br />
+            Email: <a href="mailto:info@rvcrvroadworthy.com" className="text-red-600">vrcmobeni@gmail.com</a>
           </p>
         </div>
       </div>

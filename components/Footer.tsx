@@ -6,14 +6,18 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         {/* Footer Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-700 pb-8 mb-8">
-          {/* Column 1: About */}
+          
+          {/* Column 1: About Us and Kwazulu Test Centre */}
           <div>
             <h3 className="text-xl font-semibold mb-4">About Us</h3>
             <p className="text-gray-400">
               RVC Roadworthy provides trusted vehicle accreditation services approved by SABS, SASSETA, and RMI. We ensure that your vehicle meets all legal and safety standards.
             </p>
             <p className="text-gray-400 mt-4">
-              KwaZulu Test Centre Address: Unit 29 Jacobs Industrial Park, 166 Bluff Road, Jacobs, 4052
+              <strong>Kwazulu Test Centre</strong><br />
+              Telephone: 0314673608<br />
+              Email: <a href="mailto:Kwazulutc@gmail.com" className="text-red-600 hover:text-red-700">Kwazulutc@gmail.com</a><br />
+              Address: Unit 29 Jacobs Industrial Park, 166 Bluff Road, Jacobs, 4052
             </p>
           </div>
 
@@ -39,9 +43,18 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Social Media */}
+          {/* Column 3: Mobeni Test Centre and Social Media */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+            <h3 className="text-xl font-semibold mb-4">Mobeni Test Centre</h3>
+            <p className="text-gray-400">
+              Telephone: 0314611069<br />
+              Email: <a href="mailto:vrcmobeni@gmail.com" className="text-red-600 hover:text-red-700">vrcmobeni@gmail.com</a><br />
+              Email: <a href="mailto:Roadworthymobeni@gmail.com" className="text-red-600 hover:text-red-700">Roadworthymobeni@gmail.com</a><br />
+              Address: 84 Lansdowne Road, Mobeni, 4026
+            </p>
+
+            {/* Social Media */}
+            <h3 className="text-xl font-semibold mt-6 mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <a
                 href="https://facebook.com"

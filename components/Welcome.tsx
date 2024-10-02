@@ -6,7 +6,7 @@ export default function Welcome() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-black mb-12">
-          Welcome to VRC Roadworthy
+          Welcome to Vehicle Roadworthy Centre
         </h2>
         <p className="text-gray-600 mb-6">
    For more than 30 years, Vehicle Roadworthy Centre has been leading the way in the roadworthy industry in KwaZulu-Natal. Accredited by AA, Vehicle Roadworthy Centre has 2 branches situated in Durban, which offer quality and professional roadworthy testing and related services for all types of motor vehicles.
@@ -33,7 +33,7 @@ export default function Welcome() {
               About Us
             </h3>
             <p className="text-gray-300 mb-6">
-              RVC Roadworthy has been providing reliable vehicle certification services for over a decade. Our mission is to help keep you safe on the road with our trusted and efficient certification process.
+              VRC Roadworthy has been providing reliable vehicle certification services for over a decade. Our mission is to help keep you safe on the road with our trusted and efficient certification process.
               Learn more about our story, values, and dedication to vehicle safety.
             </p>
             <Link href="/about" className="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-full">
