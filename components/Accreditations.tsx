@@ -36,9 +36,7 @@ export default function Accreditations() {
             </div>
   
             {/* SASSETA Logo */}
-            <div className="flex justify-center">
-              <img src="/SASSETA-LOGO.jpg" alt="SASSETA Approved" className="w-32 h-auto" />
-            </div>
+           
           </div>
         </div>
       </section>

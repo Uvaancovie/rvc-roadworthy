@@ -25,7 +25,7 @@ export default function AccreditationInfo() {
             <h3 className="text-2xl font-bold text-red-600 mb-4 animate-fadeInDown">Why We Are the Best in Durban</h3>
             <p className="text-gray-700">
               We are the top choice for roadworthy testing in Durban, with years of experience and accreditations from
-              SABS, SASSETA, and RMI. Our certified experts ensure fast, reliable, and trustworthy inspections, offering
+              SABS, and RMI. Our certified experts ensure fast, reliable, and trustworthy inspections, offering
               exceptional customer service and quick results.
             </p>
           </div>
@@ -40,7 +40,7 @@ export default function AccreditationInfo() {
             <div className="absolute w-3 h-3 bg-red-600 rounded-full mt-1.5 -left-1.5 border border-gray-700"></div>
             <h3 className="text-lg font-semibold text-white animate-fadeInUp">Step 1: Book an Appointment</h3>
             <p className="text-gray-700 mt-2">
-              Schedule your roadworthy test at our accredited center in Westville, Durban.
+              Schedule your roadworthy test at our accredited center in Jacobs or Mobeni, Durban.
             </p>
           </div>
 

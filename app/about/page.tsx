@@ -47,15 +47,7 @@ export default function AboutPage() {
                 className="mx-auto"
               />
             </div>
-            <div className="w-1/2 md:w-auto">
-              <Image
-                src="/SASSETA-LOGO.jpg"  // Path to your logo in the public folder
-                alt="SASSETA Logo"
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-            </div>
+            
             <div className="w-1/2 md:w-auto">
               <Image
                 src="/2.png"  // Path to your logo in the public folder
