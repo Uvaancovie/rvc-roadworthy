@@ -21,7 +21,7 @@ export default function Welcome() {
             <p className="text-gray-300 mb-6">
               Schedule your vehicle roadworthy check today and ensure that your vehicle is safe for the road. Our team of professionals will assist you through every step of the process to guarantee your vehicle meets all required standards.
             </p>
-            <Link href="/booking" className="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-full">
+            <Link href="/contact" className="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-full">
               Book Now
             </Link>
           </div>
