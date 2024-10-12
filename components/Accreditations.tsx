@@ -6,7 +6,7 @@ export default function Accreditations() {
             We Are Trusted
           </h2>
           <p className="text-gray-900 mb-12">
-            VRC Roadworthy is proudly accredited by leading industry standards. We are approved by SABS, SASSETA, and RMI.
+            Vehicle Roadworthy Centre is proudly accredited by leading industry standards. We are approved by SABS, and RMI.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

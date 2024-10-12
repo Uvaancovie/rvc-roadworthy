@@ -2,33 +2,32 @@
 
 import '@splidejs/splide/dist/css/splide.min.css'; // Import Splide CSS
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import multiPointCheck from '../public/multi-point-check.png';
+
 const services = [
   {
-    image: '/brake-suspension-test.png',
-    title: 'Brake and Suspension Test',
-    description: 'Included additional checks and brake test report.',
+    image: '/roadworthy-testing.png',
+    title: 'Roadworthy Testing',
+    description: 'Required annually for heavy motor vehicles exceeding 3500 kgs.',
   },
   {
-    image: '/change-ownership.png',
-    title: 'Change of Ownership',
-    description: 'We offer change of ownership and license renewal services.',
+    image: '/multi-pointcheck.png',
+    title: 'Multi-Point Check',
+    description: 'Included additional checks to the roadworthy test.',
+  },
+  {
+    image: '/pre-purchase-condition-report.png',
+    title: 'Pre-Condition Report',
+    description: 'Detailed condition assessment with electronic diagnostics report.',
   },
   {
     image: '/electronic-diagnostic.png',
     title: 'Electronic Diagnostics',
     description: 'We provide a detailed report on all systems and malfunctioning.',
   },
-  
   {
-    image: '/number-plates.png',
-    title: 'Number Plates',
-    description: 'Perspex and aluminium number plates available.',
-  },
-  {
-    image: '/pre-purchase-condition-report.png',
-    title: 'Pre-Purchase Condition Report',
-    description: 'Detailed condition assessment with electronic diagnostics report.',
+    image: '/brake-suspension-test.png',
+    title: 'Brake and Suspension Test',
+    description: 'Included additional checks and brake test report.',
   },
   {
     image: '/preloading-inspection.png',
@@ -36,9 +35,19 @@ const services = [
     description: 'Photographs of defects and brake test report included.',
   },
   {
-    image: '/roadworthy-testing.png',
-    title: 'Roadworthy Testing',
-    description: 'Required annually for heavy motor vehicles exceeding 3500 kgs.',
+    image: '/change-ownership.png',
+    title: 'Registration Services',
+    description: 'We offer change of ownership and license renewal services.',
+  },
+  {
+    image: '/number-plates.png',
+    title: 'Number Plates',
+    description: 'Perspex and aluminium number plates available.',
+  },
+  {
+    image: '/free-safety-test.png',
+    title: 'Free Safety Test',
+    description: 'Offered before the festive season, 10 most critical safety items assessed.',
   },
 ];
 
@@ -52,15 +61,15 @@ export default function ServiceCarousel() {
         <Splide
           options={{
             type: 'loop',
-            perPage: 3, // Display 3 items at once
+            perPage: 3,
             autoplay: true,
             pauseOnHover: true,
             arrows: true,
             pagination: false,
             gap: '1rem',
             breakpoints: {
-              1024: { perPage: 2 }, // For tablets
-              640: { perPage: 1 },  // For mobile devices
+              1024: { perPage: 2 },
+              640: { perPage: 1 },
             },
           }}
         >

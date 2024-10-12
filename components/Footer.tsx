@@ -8,15 +8,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-700 pb-8 mb-8">
           
           {/* Column 1: About Us */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">About Us</h3>
-            <p className="text-gray-400">
-              RVC Roadworthy provides trusted vehicle accreditation services approved by SABS, RMI and many more. We ensure that your vehicle meets all legal and safety standards.
+         {/* Column 3: Mobeni Test Centre */}
+         <div>
+            <h3 className="text-xl font-semibold mb-4"><strong>Mobeni Test Centre</strong></h3>
+            <p className="text-gray-400 mb-4">
+              <strong>Telephone Number:</strong> 0314611069
             </p>
-            <p className="text-gray-400 mt-4">
-              With over 30 years of experience, we offer a wide range of roadworthy testing services across our branches in Durban.
+            <p className="text-gray-400 mb-4">
+              <strong>Email Address:</strong> <a href="mailto:vrcmobeni@gmail.com" className="text-red-600 hover:text-red-700">vrcmobeni@gmail.com</a> <br />
+              <a href="mailto:Roadworthymobeni@gmail.com" className="text-red-600 hover:text-red-700">Roadworthymobeni@gmail.com</a>
+            </p>
+            <p className="text-gray-400 mb-4">
+              <strong>Address:</strong> 84 Lansdowne Road, Mobeni, 4026
             </p>
           </div>
+        </div>
 
           {/* Column 2: Kwazulu Test Centre */}
           <div>
@@ -32,21 +38,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Column 3: Mobeni Test Centre */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4"><strong>Mobeni Test Centre</strong></h3>
-            <p className="text-gray-400 mb-4">
-              <strong>Telephone Number:</strong> 0314611069
-            </p>
-            <p className="text-gray-400 mb-4">
-              <strong>Email Address:</strong> <a href="mailto:vrcmobeni@gmail.com" className="text-red-600 hover:text-red-700">vrcmobeni@gmail.com</a> <br />
-              <a href="mailto:Roadworthymobeni@gmail.com" className="text-red-600 hover:text-red-700">Roadworthymobeni@gmail.com</a>
-            </p>
-            <p className="text-gray-400 mb-4">
-              <strong>Address:</strong> 84 Lansdowne Road, Mobeni, 4026
-            </p>
-          </div>
-        </div>
+          
 
         {/* Social Media */}
         <div className="text-center text-gray-500 mb-8">

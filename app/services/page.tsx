@@ -3,15 +3,13 @@
 import React from 'react';
 import { FaCar, FaTools, FaClipboardCheck, FaKey, FaCogs, FaWrench, FaBatteryFull, FaShieldAlt } from 'react-icons/fa'; // Importing icons
 import { IconType } from 'react-icons'; // Importing IconType from 'react-icons'
-import { Splide, SplideSlide } from '@splidejs/react-splide';
 import ServiceCarousel from '@/components/ServiceCarousel';
-// Define the types for the service props
+
 interface ServiceCardProps {
   title: string;
   items: string[];
-  Icon: IconType; // IconType from react-icons provides typing for icons
+  Icon: IconType;
 }
-
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, items, Icon }) => (
   <div className="border border-gray-300 p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:border-red-500 group">
@@ -27,61 +25,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, items, Icon }) => (
         </li>
       ))}
     </ul>
-    
   </div>
 );
 
-// Define the type for the services array
-interface Service {
-  title: string;
-  items: string[];
-  Icon: IconType;
-}
-
-const services: Service[] = [
-  {
-    title: "Number Plates",
-    items: ["Perspex and aluminium number plates on other vehicles"],
-    Icon: FaCar,
-  },
-  {
-    title: "Registration Services",
-    items: ["Change of ownership and license renewal available"],
-    Icon: FaKey,
-  },
-  {
-    title: "Pre-Loading Inspection",
-    items: [
-      "Detailed assessment of the vehicle",
-      "Photographs of all defects",
-      "Additional checks to the roadworthy test",
-      "Brake test report included",
-    ],
-    Icon: FaClipboardCheck,
-  },
-  {
-    title: "Brake and Suspension Testing",
-    items: [
-      "Included additional testing to the roadworthy checks",
-      "Included brake test report",
-      "Visual brake inspection",
-      "Indicate wear on suspension and steering components",
-    ],
-    Icon: FaCogs,
-  },
-  {
-    title: "Electrical Diagnostics",
-    items: ["Report information on all systems and any malfunctioning of any electronic system"],
-    Icon: FaBatteryFull,
-  },
-  {
-    title: "Free Safety Test",
-    items: [
-      "Offered before the festive season",
-      "10 most critical safety items will be assessed",
-    ],
-    Icon: FaShieldAlt,
-  },
+const services = [
   {
     title: "Roadworthy Testing",
     items: [
@@ -101,14 +48,57 @@ const services: Service[] = [
     Icon: FaWrench,
   },
   {
-    title: "Pre-Purchase Condition Report",
+    title: "Pre-Condition Report",
     items: [
       "Detailed condition assessment to the roadworthy test",
       "Photographs of all defects",
       "Included electronic diagnostics report",
     ],
     Icon: FaClipboardCheck,
-  }
+  },
+  {
+    title: "Electrical Diagnostics",
+    items: ["Report information on all systems and any malfunctioning of any electronic system"],
+    Icon: FaBatteryFull,
+  },
+  {
+    title: "Brake and Suspension Testing",
+    items: [
+      "Included additional testing to the roadworthy checks",
+      "Included brake test report",
+      "Visual brake inspection",
+      "Indicate wear on suspension and steering components",
+    ],
+    Icon: FaCogs,
+  },
+  {
+    title: "Pre-Loading Inspection",
+    items: [
+      "Detailed assessment of the vehicle",
+      "Photographs of all defects",
+      "Additional checks to the roadworthy test",
+      "Brake test report included",
+    ],
+    Icon: FaClipboardCheck,
+  },
+  {
+    title: "Registration Services",
+    items: ["Change of ownership and license renewal available"],
+    Icon: FaKey,
+  },
+  {
+    title: "Number Plates",
+    items: ["Perspex and aluminium number plates on other vehicles"],
+    Icon: FaCar,
+  },
+  {
+    title: "Free Safety Test",
+    items: [
+      "Offered before the festive season",
+      "10 most critical safety items will be assessed",
+    ],
+    Icon: FaShieldAlt,
+  },
 ];
 
 export default function ServicesPage() {
@@ -126,9 +116,5 @@ export default function ServicesPage() {
         </div>
       </div>
     </section>
-
-    
-
-    
   );
 }

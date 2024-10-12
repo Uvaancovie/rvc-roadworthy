@@ -52,33 +52,7 @@ export default function ContactPage() {
               </form>
             </div>
 
-            {/* Kwazulu Test Centre Details */}
-            <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold text-red-600 mb-4">Kwazulu Test Centre</h2>
-              <p className="text-gray-300 mb-4">Feel free to reach out to us via phone, email, or visit our office:</p>
-              <ul className="text-gray-300 space-y-3">
-                <li>
-                  <strong>Telephone Number:</strong> 0314673608
-                </li>
-                <li>
-                  <strong>Email Address:</strong> <a href="mailto:Kwazulutc@gmail.com" className="text-red-600 hover:text-red-700">Kwazulutc@gmail.com</a>
-                </li>
-                <li>
-                  <strong>Address:</strong> Unit 29 Jacobs Industrial Park, 166 Bluff Road, Jacobs, 4052
-                </li>
-              </ul>
-
-              {/* Google Map for Kwazulu Test Centre */}
-              <div className="mt-8">
-                <iframe
-                  className="w-full h-64 rounded-lg border-4 border-red-600 transition-all duration-500 hover:scale-105"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.401776478053!2d30.952634715114237!3d-29.821215981955284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eaa130caa802233%3A0x355992a935c4db8b!2sWestville%2C%20Durban!5e0!3m2!1sen!2sza!4v1638860740584!5m2!1sen!2sza"
-                  allowFullScreen={true}
-                  loading="lazy"
-                  title="Kwazulu Test Centre Location"
-                ></iframe>
-              </div>
-            </div>
+          
 
             {/* Mobeni Test Centre Details */}
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
@@ -108,7 +82,33 @@ export default function ContactPage() {
                 ></iframe>
               </div>
             </div>
+  {/* Kwazulu Test Centre Details */}
+  <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
+              <h2 className="text-2xl font-bold text-red-600 mb-4">Kwazulu Test Centre</h2>
+              <p className="text-gray-300 mb-4">Feel free to reach out to us via phone, email, or visit our office:</p>
+              <ul className="text-gray-300 space-y-3">
+                <li>
+                  <strong>Telephone Number:</strong> 0314673608
+                </li>
+                <li>
+                  <strong>Email Address:</strong> <a href="mailto:Kwazulutc@gmail.com" className="text-red-600 hover:text-red-700">Kwazulutc@gmail.com</a>
+                </li>
+                <li>
+                  <strong>Address:</strong> Unit 29 Jacobs Industrial Park, 166 Bluff Road, Jacobs, 4052
+                </li>
+              </ul>
 
+              {/* Google Map for Kwazulu Test Centre */}
+              <div className="mt-8">
+                <iframe
+                  className="w-full h-64 rounded-lg border-4 border-red-600 transition-all duration-500 hover:scale-105"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.401776478053!2d30.952634715114237!3d-29.821215981955284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eaa130caa802233%3A0x355992a935c4db8b!2sWestville%2C%20Durban!5e0!3m2!1sen!2sza!4v1638860740584!5m2!1sen!2sza"
+                  allowFullScreen={true}
+                  loading="lazy"
+                  title="Kwazulu Test Centre Location"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>
