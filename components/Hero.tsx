@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -8,11 +9,24 @@ export default function Hero() {
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
+      {/* Mobile-Only Image (2.png) */}
+      <div className="absolute top-0 left-0 p-4 flex flex-col space-y-2 md:hidden"> 
+        {/* Ensure the image appears only on mobile screens */}
+        
+        <Image
+          src="/2.png" // Add the correct path for 2.png
+          alt="Logo 2"
+          width={50} // Adjust the width as needed
+          height={50}
+          className="block"
+        />
+      </div>
+
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center items-center text-center h-full text-white">
         {/* Heading with animation */}
         <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fadeInDown text-stone-50">
-        Roadworthy Testings & Inspections
+          Roadworthy Testings & Inspections
         </h1>
 
         {/* Subheading with animation */}
