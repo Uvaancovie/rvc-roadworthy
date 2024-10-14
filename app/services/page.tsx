@@ -41,7 +41,7 @@ const services = [
   {
     title: "Multi-Point Check",
     items: [
-      "Included additional checks to the roadworthy test",
+      "Includes additional checks to the roadworthy test",
       "Recommended on private purchase",
       "Required for private to private finance",
     ],
@@ -64,8 +64,8 @@ const services = [
   {
     title: "Brake and Suspension Testing",
     items: [
-      "Included additional testing to the roadworthy checks",
-      "Included brake test report",
+      "Includes additional testing to the roadworthy checks",
+      "Includes brake test report",
       "Visual brake inspection",
       "Indicate wear on suspension and steering components",
     ],
@@ -88,7 +88,7 @@ const services = [
   },
   {
     title: "Number Plates",
-    items: ["Perspex and aluminium number plates on other vehicles"],
+    items: ["Perspex and aluminium number plates "],
     Icon: FaCar,
   },
   {

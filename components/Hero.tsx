@@ -14,7 +14,7 @@ export default function Hero() {
         {/* Ensure the image appears only on mobile screens */}
         
         <Image
-          src="/approved-1.png" // Add the correct path for 2.png
+          src="/approved-3.png" // Add the correct path for 2.png
           alt="Logo 2"
           width={100} // Adjust the width as needed
           height={100}

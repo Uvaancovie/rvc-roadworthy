@@ -26,10 +26,10 @@ export default function Navbar() {
               className="h-auto w-auto"
             />
             <Image 
-              src="/2.png"  // Path to the second logo in the public folder
+              src="/approved-1.png"  // Path to the second logo in the public folder
               alt="Logo 2"
-              width={50}
-              height={50}
+              width={100}
+              height={100}
               className="h-auto w-auto"
             />
           </div>
