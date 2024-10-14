@@ -6,7 +6,7 @@ export default function Accreditations() {
             We Are Trusted
           </h2>
           <p className="text-gray-900 mb-12">
-            Vehicle Roadworthy Centre is proudly accredited by leading industry standards. We are approved by SABS, and RMI.
+            Vehicle Roadworthy Centre is proudly accredited by leading industry standards. We are approved by SABS,RMI , AA and Department Of Transport
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

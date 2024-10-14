@@ -33,7 +33,7 @@ export default function Welcome() {
               About Us
             </h3>
             <p className="text-gray-300 mb-6">
-              VRC Roadworthy has been providing reliable vehicle certification services for over a decade. Our mission is to help keep you safe on the road with our trusted and efficient certification process.
+              Vehicle Roadworthy Centre has been providing reliable vehicle certification services for over a decade. Our mission is to help keep you safe on the road with our trusted and efficient certification process.
               Learn more about our story, values, and dedication to vehicle safety.
             </p>
             <Link href="/about" className="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-full">
