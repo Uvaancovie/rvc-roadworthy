@@ -14,10 +14,10 @@ export default function Hero() {
         {/* Ensure the image appears only on mobile screens */}
         
         <Image
-          src="/AA.png" // Add the correct path for 2.png
+          src="/approved-1.png" // Add the correct path for 2.png
           alt="Logo 2"
-          width={50} // Adjust the width as needed
-          height={50}
+          width={100} // Adjust the width as needed
+          height={100}
           className="block"
         />
       </div>

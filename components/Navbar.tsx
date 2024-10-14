@@ -19,7 +19,7 @@ export default function Navbar() {
         <Link href="/">
           <div className="flex items-center space-x-4"> {/* Flexbox to place logos next to each other */}
             <Image 
-              src="/1.png"  // Path to the first logo in the public folder
+              src="/1.jpg"  // Path to the first logo in the public folder
               alt="Logo 1"
               width={50}  // Adjust width and height as necessary
               height={50}
