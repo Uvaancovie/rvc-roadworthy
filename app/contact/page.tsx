@@ -100,13 +100,13 @@ export default function ContactPage() {
 
               {/* Google Map for Kwazulu Test Centre */}
               <div className="mt-8">
-                <iframe
-                  className="w-full h-64 rounded-lg border-4 border-red-600 transition-all duration-500 hover:scale-105"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.401776478053!2d30.952634715114237!3d-29.821215981955284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eaa130caa802233%3A0x355992a935c4db8b!2sWestville%2C%20Durban!5e0!3m2!1sen!2sza!4v1638860740584!5m2!1sen!2sza"
-                  allowFullScreen={true}
-                  loading="lazy"
-                  title="Kwazulu Test Centre Location"
-                ></iframe>
+              <iframe
+  className="w-full h-64 rounded-lg border-4 border-red-600 transition-all duration-500 hover:scale-105"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.401776478053!2d30.9765865!3d-29.9148564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7aa1125f3e229%3A0x2a1d5fa1d9eec991!2sUnit%2029%20Jacobs%20Industrial%20Park%2C%20166%20Bluff%20Rd%2C%20Jacobs%2C%20Durban%2C%204052!5e0!3m2!1sen!2sza!4v1695826101837!5m2!1sen!2sza"
+  allowFullScreen={true}
+  loading="lazy"
+  title="Unit 29 Jacobs Industrial Park"
+/>
               </div>
             </div>
           </div>
