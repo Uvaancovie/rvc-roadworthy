@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.1.5",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
+    "emailjs-com": "^3.2.0",
     "my-nextjs-app": "file:",
     "next": "14.2.13",
     "nodemailer": "^6.9.15",
