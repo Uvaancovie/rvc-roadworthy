@@ -6,7 +6,7 @@ export default function NewsBanner() {
           {/* Scrolling text */}
           <div className="whitespace-nowrap animate-scroll text-white text-lg font-semibold">
             <span className="mr-10">
-              🚨 Roadworthy Testing • Multi-Point Checks • Pre-Condition Reports • 🚨
+              🚨 Roadworthy Testing • Multi-Point Checks • Pre-Condition Reports  🚨
             </span>
           </div>
         </div>

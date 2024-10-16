@@ -13,13 +13,7 @@ export default function Hero() {
       <div className="absolute top-0 left-0 p-4 flex flex-col space-y-2 md:hidden"> 
         {/* Ensure the image appears only on mobile screens */}
         
-        <Image
-          src="/" // Add the correct path for 2.png
-          alt="Logo 2"
-          width={100} // Adjust the width as needed
-          height={100}
-          className="block"
-        />
+       
       </div>
 
       {/* Content */}
