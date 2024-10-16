@@ -25,7 +25,7 @@ export default function AccreditationInfo() {
             <h3 className="text-2xl font-bold text-red-600 mb-4 animate-fadeInDown">Why We Are the Best in Durban</h3>
             <p className="text-gray-700">
               We are the top choice for roadworthy testing in Durban, with years of experience and accreditations from
-              SABS, and RMI. Our certified experts ensure fast, reliable, and trustworthy inspections, offering
+              SABS , and RMI. Our certified experts ensure fast, reliable, and trustworthy inspections, offering
               exceptional customer service and quick results.
             </p>
           </div>
