@@ -1,11 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { createClient } from '@supabase/supabase-js';
-
-const supabaseUrl = 'https://iutjcqbftvevrvlvxbpf.supabase.co';
-const supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY'; // Add your anon key here
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+import { supabase } from '../../lib/supabaseClient';  // Update this path according to your folder structure
 
 export default function ContactPage() {
   const [name, setName] = useState('');
@@ -15,7 +11,6 @@ export default function ContactPage() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
-  // Fixing the type of event 'e'
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
@@ -103,3 +98,9 @@ export default function ContactPage() {
     </section>
   );
 }
+  
+ // In the above code, we have created a simple contact form that allows users to submit their name, email, and message. When the form is submitted, the data is sent to the  contact_submissions  table in the Supabase database. 
+  //We have also added some basic form validation and error handling to display success or error messages to the user. 
+  //Step 4: Add the Contact Page to the Navigation 
+ // Now that we have created the contact page, let’s add it to the navigation menu so that users can access it. 
+  //Open the  app/_app.tsx  file and update the navigation links as shown below:
