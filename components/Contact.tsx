@@ -1,6 +1,40 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
+import { supabase } from '../lib/supabaseClient';  // Ensure correct import path for Supabase
 
 export default function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+    setSuccess('');
+
+    try {
+      const { error } = await supabase.from('contact_submissions').insert([
+        { name, email, message },
+      ]);
+
+      if (error) throw error;
+
+      setSuccess('Your message has been sent successfully!');
+      setName('');
+      setEmail('');
+      setMessage('');
+    } catch (error) {
+      setError('Something went wrong, please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="py-16 bg-white text-black" id="contact">
       <div className="container mx-auto px-4">
@@ -10,7 +44,7 @@ export default function Contact() {
         </p>
 
         <div className="max-w-lg mx-auto">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                 Full Name
@@ -20,6 +54,9 @@ export default function Contact() {
                 id="name"
                 className="w-full px-3 py-2 bg-gray-800 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-600"
                 placeholder="Enter your full name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
               />
             </div>
 
@@ -32,6 +69,9 @@ export default function Contact() {
                 id="email"
                 className="w-full px-3 py-2 bg-gray-800 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-600"
                 placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
               />
             </div>
 
@@ -42,17 +82,25 @@ export default function Contact() {
               <textarea
                 id="message"
                 className="w-full px-3 py-2 bg-gray-800 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-600"
-                rows={5} // Correcting here: rows as a number
+                rows={5}
                 placeholder="Write your message here..."
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
               ></textarea>
             </div>
+
+            {/* Display Success or Error Message */}
+            {error && <p className="text-red-500 text-center">{error}</p>}
+            {success && <p className="text-green-500 text-center">{success}</p>}
 
             <div className="text-center">
               <button
                 type="submit"
                 className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full"
+                disabled={loading}
               >
-                Send Message
+                {loading ? 'Sending...' : 'Send Message'}
               </button>
             </div>
           </form>
@@ -60,7 +108,7 @@ export default function Contact() {
 
         <div className="mt-12 text-center">
           <p className="text-gray-700">
-           
+            {/* Add other information here if needed */}
           </p>
         </div>
       </div>
