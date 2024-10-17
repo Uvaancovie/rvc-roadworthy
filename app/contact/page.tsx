@@ -1,40 +1,43 @@
 'use client';
 
-import { useState } from 'react';
-import { supabase } from '../../supabaseClient'; // Import Supabase client
+import React, { useState } from 'react';
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = 'https://iutjcqbftvevrvlvxbpf.supabase.co';
+const supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY'; // Add your anon key here
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
-  const handleSubmit = async (e) => {
+  // Fixing the type of event 'e'
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setError('');
-    setSuccess(false);
+    setSuccess('');
 
-    const { name, email, message } = formData;
+    try {
+      const { error } = await supabase.from('contact_submissions').insert([
+        { name, email, message },
+      ]);
 
-    // Send the form data to Supabase
-    const { data, error } = await supabase
-      .from('contact_submissions')
-      .insert([{ name, email, message }]);
+      if (error) throw error;
 
-    if (error) {
-      console.error('Error submitting form:', error);
-      setError('An error occurred. Please try again later.');
-    } else {
-      setSuccess(true);
-      setFormData({ name: '', email: '', message: '' });
+      setSuccess('Your message has been sent successfully!');
+      setName('');
+      setEmail('');
+      setMessage('');
+    } catch (error) {
+      setError('Something went wrong, please try again.');
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
-  };
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -47,16 +50,20 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-red-600 mb-4">Send us a message</h2>
-            <form onSubmit={handleSubmit} className="space-y-4">
+
+            {/* Display Success or Error Message */}
+            {error && <p className="text-red-500">{error}</p>}
+            {success && <p className="text-green-500">{success}</p>}
+
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-sm font-bold mb-2 text-white">Name</label>
                 <input
                   type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   className="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-600"
                   placeholder="Your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   required
                 />
               </div>
@@ -64,23 +71,21 @@ export default function ContactPage() {
                 <label className="block text-sm font-bold mb-2 text-white">Email</label>
                 <input
                   type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   className="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-600"
                   placeholder="Your Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                 />
               </div>
               <div>
                 <label className="block text-sm font-bold mb-2 text-white">Message</label>
                 <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   className="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-red-600"
                   rows={5}
                   placeholder="Your Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   required
                 ></textarea>
               </div>
@@ -92,8 +97,6 @@ export default function ContactPage() {
                 {loading ? 'Sending...' : 'Send Message'}
               </button>
             </form>
-            {success && <p className="text-green-500 mt-4">Message sent successfully!</p>}
-            {error && <p className="text-red-500 mt-4">{error}</p>}
           </div>
         </div>
       </div>
