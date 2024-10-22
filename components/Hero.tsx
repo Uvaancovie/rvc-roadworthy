@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       className="relative bg-cover bg-center h-screen"
-      style={{ backgroundImage: "url('/new-bg.png')" }} // Use the correct path for the image
+      style={{ backgroundImage: "url('/single-truck.png')" }} // Use the correct path for the image
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="relative z-20 flex flex-col justify-center items-center text-center h-full text-white">
         {/* Heading with animation */}
         <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fadeInDown text-stone-50">
-          Roadworthy Testings & Inspections
+          Roadworthy Testing & Inspection
         </h1>
 
         {/* Subheading with animation */}
