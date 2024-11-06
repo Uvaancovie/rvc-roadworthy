@@ -14,7 +14,7 @@ export default function AccreditationInfo() {
         {/* Why It's Important Flexbox */}
         <div className="flex flex-col md:flex-row gap-8 mb-16">
           <div className="flex-1 border-l-4 border-red-600 pl-4 transition-transform duration-500 hover:scale-105">
-            <h3 className="text-2xl font-bold text-red-600 mb-4 animate-fadeInDown">Why Accreditation is Important</h3>
+            <h3 className="text-2xl font-bold text-red-600 mb-4 animate-fadeInDown">Why Certification is Important</h3>
             <p className="text-gray-700">
               Roadworthy certification ensures that your vehicle meets safety standards, making the roads safer for
               everyone. It protects you from accidents caused by vehicle defects, ensures your car is legally compliant,
