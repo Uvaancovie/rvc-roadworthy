@@ -8,7 +8,7 @@ export default function AccreditationInfo() {
     <section className="py-16 bg-white text-black relative">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 animate-fadeInUp">
-          Why Roadworthy Accreditation is Important
+          Why Roadworthy Certification is Important
         </h2>
 
         {/* Why It's Important Flexbox */}
@@ -16,7 +16,7 @@ export default function AccreditationInfo() {
           <div className="flex-1 border-l-4 border-red-600 pl-4 transition-transform duration-500 hover:scale-105">
             <h3 className="text-2xl font-bold text-red-600 mb-4 animate-fadeInDown">Why Accreditation is Important</h3>
             <p className="text-gray-700">
-              Roadworthy accreditation ensures that your vehicle meets safety standards, making the roads safer for
+              Roadworthy certification ensures that your vehicle meets safety standards, making the roads safer for
               everyone. It protects you from accidents caused by vehicle defects, ensures your car is legally compliant,
               and can save you from hefty fines.
             </p>
@@ -31,7 +31,7 @@ export default function AccreditationInfo() {
           </div>
         </div>
 
-        <h2 className="text-4xl font-bold text-center mb-12 animate-bounceIn">Steps to Getting Accredited</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 animate-bounceIn">Steps to Getting Certified</h2>
 
         {/* Timeline for Steps */}
         <div className="relative border-l-4 border-red-600 mb-16">
@@ -68,7 +68,7 @@ export default function AccreditationInfo() {
             <div className="absolute w-3 h-3 bg-red-600 rounded-full mt-1.5 -left-1.5 border border-gray-700"></div>
             <h3 className="text-lg font-semibold text-white animate-fadeInUp">Step 4: Accreditation</h3>
             <p className="text-gray-700 mt-2">
-              Upon passing, you will be issued your roadworthy accreditation certificate.
+              Upon passing, you will be issued your roadworthy certificate.
             </p>
           </div>
         </div>

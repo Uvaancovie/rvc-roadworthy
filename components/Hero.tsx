@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="relative z-20 flex flex-col justify-center items-center text-center h-full text-white">
         {/* Heading with animation */}
         <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fadeInDown text-stone-50">
-          Roadworthy Testing & Inspection
+         Vehicle Roadworthy Centre
         </h1>
 
         {/* Subheading with animation */}

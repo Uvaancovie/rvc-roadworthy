@@ -43,7 +43,7 @@ const FaqAccordion = () => {
             >
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full text-left px-4 py-3 bg-black text-white font-bold hover:bg-red-600 transition duration-300"
+                className="w-full text-left px-4 py-3 bg-black text-white font-bold hover:bg-black-600 transition duration-300"
               >
                 <div className="flex justify-between items-center">
                   <span className="text-xl text-red-600">{item.question}</span>
