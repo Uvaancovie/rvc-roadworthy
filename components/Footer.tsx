@@ -42,32 +42,9 @@ export default function Footer() {
 
         {/* Social Media */}
         <div className="text-center text-gray-500 mb-8">
-          <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+          <h3 className="text-xl font-semibold mb-4"></h3>
           <div className="flex justify-center space-x-4">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-red-600"
-            >
-              <FaFacebookF size={20} />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-red-600"
-            >
-              <FaTwitter size={20} />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-red-600"
-            >
-              <FaInstagram size={20} />
-            </a>
+           
           </div>
         </div>
 
