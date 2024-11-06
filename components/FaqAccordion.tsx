@@ -9,16 +9,16 @@ const FaqAccordion = () => {
   // Questions and Answers data
   const faqData = [
     {
-      question: 'Why is roadworthy accreditation important?',
-      answer: 'Roadworthy accreditation ensures that your vehicle meets safety standards, making the roads safer for everyone. It protects you from accidents caused by vehicle defects, ensures your car is legally compliant, and can save you from hefty fines.',
+      question: 'Why is roadworthy certification important?',
+      answer: 'Roadworthy certification ensures that your vehicle meets safety standards, making the roads safer for everyone. It protects you from accidents caused by vehicle defects, ensures your car is legally compliant, and can save you from hefty fines.',
     },
     {
       question: 'What are the benefits of choosing VRC ?',
-      answer: 'We are the top choice for roadworthy testing in Durban, with years of experience and accreditations from SABS, Proudly South African, Department of Transport, AA , and RMI. Our certified experts ensure fast, reliable, and trustworthy inspections, offering exceptional customer service and quick results.',
+      answer: 'We are the top choice for roadworthy testing in Durban, with years of experience and certifications from SABS, Proudly South African, Department of Transport, AA , and RMI. Our certified experts ensure fast, reliable, and trustworthy inspections, offering exceptional customer service and quick results.',
     },
     {
-      question: 'How do I get roadworthy accredited?',
-      answer: 'The process is simple. First, book an appointment with us. Next, bring your vehicle to our center for inspection. Upon passing the test, you will receive your accreditation.',
+      question: 'How do I get roadworthy certified?',
+      answer: 'The process is simple. First, book an appointment with us. Next, bring your vehicle to our center for inspection. Upon passing the test, you will receive your certification.',
     },
   ];
 
